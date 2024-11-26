@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2E7D32;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Section Styles */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #2E7D32;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #2E7D32;
+    padding-bottom: 5px;
+}
+
+section h3 {
+    color: #2E7D32;
+    margin-bottom: 0.8rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+section h3 i {
+    font-weight: normal;
+    color: gray;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.mainLi {
+    list-style: none;
+}
+
+.mainLi>strong {
+    color: red;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #2E7D32;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Skills & Languages */
+.skills,
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item,
+.language-item {
+    background: #e8f5e9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .skill-item,
+    .language-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2E7D32;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
