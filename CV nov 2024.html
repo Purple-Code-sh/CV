@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Javier Shmin Infante Barrios</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
         }
+
+        /* Header */
         header {
-            background-color: #4CAF50;
+            background: #4CAF50;
             color: #fff;
             padding: 20px 10px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
+            font-size: 2rem;
         }
+        header p {
+            margin: 5px 0 0;
+        }
+
+        /* Section Styles */
         section {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
@@ -32,30 +42,69 @@
         }
         section h2 {
             color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
         }
         ul {
-            list-style-type: square;
+            list-style-type: disc;
+            padding-left: 20px;
             margin: 10px 0;
-            padding: 0 20px;
         }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Info */
         .contact-info {
             text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
         }
         .contact-info a {
             color: #4CAF50;
             text-decoration: none;
         }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills & Languages */
         .skills, .languages {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
         }
         .skill-item, .language-item {
             background: #e8f5e9;
             padding: 10px 15px;
             border-radius: 5px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .skill-item, .language-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -91,9 +140,10 @@
         <li>
             <strong>Frontend Web Developer | Loeram Software Solutions</strong> (Abril 2024 - Actualidad)
             <ul>
-                <li>Implementé un sistema de compresión de archivos PDF, mejorando la seguridad y eficiencia.</li>
-                <li>Diseñé módulos interactivos para tareas, tablas dinámicas y almacenamiento seguro de datos.</li>
-                <li>Mantuve e implementé mejoras en APIs usando FastAPI.</li>
+                <li>Implementé un sistema de compresión de archivos PDF, mejorando la <strong>seguridad de datos</strong> y optimizando el rendimiento del sistema principal.</li>
+                <li>Diseñé módulos de interfaz gráfica centrados en la <strong>accesibilidad web</strong> y la experiencia del usuario (UX).</li>
+                <li>Integré <strong>APIs RESTful</strong> utilizando FastAPI para aplicaciones de alto rendimiento.</li>
+                <li>Participé en revisiones de código y prácticas de desarrollo <strong>ágil (Scrum)</strong> para mantener estándares de calidad.</li>
             </ul>
         </li>
         <li>
@@ -125,6 +175,7 @@
         <div class="skill-item">MongoDB</div>
         <div class="skill-item">AWS</div>
         <div class="skill-item">Git</div>
+        <div class="skill-item">Paquetería de Office (incluido Excel)</div>
     </div>
 </section>
 
@@ -142,6 +193,10 @@
         <div class="language-item">Inglés: Intermedio-Alto (B2)</div>
     </div>
 </section>
+
+<footer>
+    <p>© 2024 Javier Shmin Infante Barrios. Todos los derechos reservados.</p>
+</footer>
 
 </body>
 </html>
